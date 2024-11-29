@@ -10,7 +10,7 @@ export default async function Home() {
 
   return (
     <main>
-      <div>Next.js on GitHub Pages</div>
+      <h1>Deploy your static Next.js site to GitHub Pages.</h1>
       <ul>
         {posts.map(post => (
           <li key={post.id}>{post.caption}</li>
