@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   output: "export"
 };
 
+// This is necessary for GitHub Pages to work correctly
 if (process.env.NODE_ENV === "production") {
   nextConfig.basePath = "/nextjs-on-github-pages";
 }
