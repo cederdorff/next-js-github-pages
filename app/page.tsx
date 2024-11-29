@@ -1,7 +1,6 @@
 export default async function Home() {
   const request = await fetch("https://next-post-app-race-default-rtdb.firebaseio.com/posts.json");
   const data = await request.json();
-  // from object to array
   const posts = Object.keys(data).map(key => ({
     id: key,
     ...data[key]
