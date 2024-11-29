@@ -1,5 +1,3 @@
-import FormCreate from "./components/FormCreate";
-
 export default async function Home() {
   const request = await fetch("https://next-post-app-race-default-rtdb.firebaseio.com/posts.json");
   const data = await request.json();
@@ -18,7 +16,6 @@ export default async function Home() {
           <li key={post.id}>{post.caption}</li>
         ))}
       </ul>
-      <FormCreate />
     </main>
   );
 }
